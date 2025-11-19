@@ -19,6 +19,7 @@ dependencies:
   logger: ^2.6.2
   url_launcher: ^6.3.2
   intl_phone_number_input: ^0.7.5
+  flutter_native_splash: ^2.4.7
 
   # Icons
   cupertino_icons: ^1.0.8
