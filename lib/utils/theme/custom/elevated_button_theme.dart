@@ -28,15 +28,19 @@ class EElevatedButtonTheme {
 
   /* -- Light Theme -- */
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
-    style: ElevatedButton.styleFrom(
-      disabledBackgroundColor: EColors.buttonDisabled,
-    ).merge(_elevatedButtonStyle),
+    style: _elevatedButtonStyle.merge(
+      ElevatedButton.styleFrom(
+        disabledBackgroundColor: EColors.buttonDisabled,
+      ),
+    ),
   );
 
   /* -- Dark Theme -- */
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
-    style: ElevatedButton.styleFrom(
-      disabledBackgroundColor: EColors.darkerGrey,
-    ).merge(_elevatedButtonStyle),
+    style: _elevatedButtonStyle.merge(
+      ElevatedButton.styleFrom(
+        disabledBackgroundColor: EColors.darkerGrey,
+      ),
+    ),
   );
 }

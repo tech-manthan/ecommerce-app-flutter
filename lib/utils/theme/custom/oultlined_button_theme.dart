@@ -24,20 +24,24 @@ class EOutlinedButtonTheme {
   );
 
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
-    style: OutlinedButton.styleFrom(
-      foregroundColor: EColors.dark,
-      textStyle: _textStyle.copyWith(
-        color: EColors.black,
+    style: _outlineButtonStyle.merge(
+      OutlinedButton.styleFrom(
+        foregroundColor: EColors.dark,
+        textStyle: _textStyle.copyWith(
+          color: EColors.black,
+        ),
       ),
-    ).merge(_outlineButtonStyle),
+    ),
   );
 
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
-    style: OutlinedButton.styleFrom(
-      foregroundColor: EColors.light,
-      textStyle: _textStyle.copyWith(
-        color: EColors.textWhite,
+    style: _outlineButtonStyle.merge(
+      OutlinedButton.styleFrom(
+        foregroundColor: EColors.light,
+        textStyle: _textStyle.copyWith(
+          color: EColors.textWhite,
+        ),
       ),
-    ).merge(_outlineButtonStyle),
+    ),
   );
 }
