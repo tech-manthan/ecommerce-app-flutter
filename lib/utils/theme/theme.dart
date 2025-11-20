@@ -5,6 +5,7 @@ import 'package:ecommerce_app/utils/theme/custom/checkbox_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/chip_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/elevated_button_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/oultlined_button_theme.dart';
+import 'package:ecommerce_app/utils/theme/custom/text_button_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/text_field_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/text_theme.dart';
 
@@ -23,6 +24,7 @@ class EAppTheme {
     inputDecorationTheme: ETextFormFieldTheme.lightInputDecorationTheme,
     elevatedButtonTheme: EElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.lightOutlinedButtonTheme,
+    textButtonTheme: ETextButtonTheme.lightTextButtonTheme,
     appBarTheme: EAppBarTheme.lightAppBarTheme,
     bottomSheetTheme: EBottomSheetTheme.lightBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.lightCheckboxTheme,
@@ -38,6 +40,7 @@ class EAppTheme {
     inputDecorationTheme: ETextFormFieldTheme.darkInputDecorationTheme,
     elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.darkOutlinedButtonTheme,
+    textButtonTheme: ETextButtonTheme.darkTextButtonTheme,
     appBarTheme: EAppBarTheme.lightAppBarTheme,
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
