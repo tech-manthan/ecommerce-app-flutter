@@ -41,7 +41,7 @@ class EAppTheme {
     elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.darkOutlinedButtonTheme,
     textButtonTheme: ETextButtonTheme.darkTextButtonTheme,
-    appBarTheme: EAppBarTheme.lightAppBarTheme,
+    appBarTheme: EAppBarTheme.darkAppBarTheme,
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
     chipTheme: EChipTheme.darkChipTheme,
