@@ -1,15 +1,9 @@
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 
 import 'package:flutter/material.dart';
 
 class ETextButtonTheme {
   ETextButtonTheme._();
-
-  static final _textStyle = const TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
-  );
 
   static final _textButtonStyle = TextButton.styleFrom(
     elevation: 0,
