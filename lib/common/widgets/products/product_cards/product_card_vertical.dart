@@ -107,38 +107,41 @@ class ProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
+                ],
+              ),
+            ),
+            const Spacer(),
 
-                  // Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const ProductPriceText(
-                        price: "35.5",
-                      ),
+            Padding(
+              padding: const EdgeInsets.only(left: ESizes.sm),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const ProductPriceText(
+                    price: "35.5",
+                  ),
 
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: EColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(ESizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              ESizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: ESizes.iconLg * 1.2,
-                          height: ESizes.iconLg * 1.2,
-
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: EColors.white,
-                            ),
-                          ),
+                  Container(
+                    decoration: const BoxDecoration(
+                      color: EColors.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(ESizes.cardRadiusMd),
+                        bottomRight: Radius.circular(
+                          ESizes.productImageRadius,
                         ),
                       ),
-                    ],
+                    ),
+                    child: const SizedBox(
+                      width: ESizes.iconLg * 1.2,
+                      height: ESizes.iconLg * 1.2,
+
+                      child: Center(
+                        child: Icon(
+                          Iconsax.add,
+                          color: EColors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
