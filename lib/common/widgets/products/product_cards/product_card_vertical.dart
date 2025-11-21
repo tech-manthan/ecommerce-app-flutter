@@ -4,6 +4,7 @@ import 'package:ecommerce_app/common/widgets/icons/circular_icon.dart';
 import 'package:ecommerce_app/common/widgets/images/rounded_image.dart';
 import 'package:ecommerce_app/common/widgets/products/product_texts/product_price_text.dart';
 import 'package:ecommerce_app/common/widgets/products/product_texts/product_title_text.dart';
+import 'package:ecommerce_app/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
@@ -75,41 +76,25 @@ class ProductCardVertical extends StatelessWidget {
               height: ESizes.spaceBtwItems / 2,
             ),
 
-            Padding(
-              padding: const EdgeInsetsGeometry.only(
+            const Padding(
+              padding: EdgeInsetsGeometry.only(
                 left: ESizes.sm,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ProductTitleText(
+                  ProductTitleText(
                     title: "Green Nike Air Shoes",
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: ESizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: ESizes.xs,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: EColors.primary,
-                        size: ESizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleWithVerificationIcon(title: "Nike"),
                 ],
               ),
             ),
+
             const Spacer(),
 
             Padding(
