@@ -45,7 +45,7 @@ class VerticalImageText extends StatelessWidget {
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  // color: isDarkMode ? EColors.light : EColors.dark,
+                  color: isDarkMode ? EColors.light : EColors.dark,
                 ),
               ),
             ),

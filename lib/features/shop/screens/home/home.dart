@@ -1,5 +1,7 @@
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:ecommerce_app/common/widgets/layouts/grid_layout.dart';
+import 'package:ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_categories.dart';
@@ -14,11 +16,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   HomeAppBar(),
@@ -60,12 +62,35 @@ class HomeScreen extends StatelessWidget {
             ),
 
             Padding(
-              padding: EdgeInsets.all(ESizes.defaultSpace),
-              child: PromoSlider(
-                banners: [
-                  EImages.promoBanner1,
-                  EImages.promoBanner2,
-                  EImages.promoBanner3,
+              padding: const EdgeInsets.all(ESizes.defaultSpace),
+              child: Column(
+                children: [
+                  const PromoSlider(
+                    banners: [
+                      EImages.promoBanner1,
+                      EImages.promoBanner2,
+                      EImages.promoBanner3,
+                    ],
+                  ),
+
+                  const SizedBox(
+                    height: ESizes.spaceBtwSections,
+                  ),
+
+                  const SectionHeading(
+                    title: "Products",
+                    textColor: EColors.black,
+                  ),
+
+                  const SizedBox(
+                    height: ESizes.spaceBtwItems,
+                  ),
+                  GridLayout(
+                    itemCount: 4,
+                    itemBuilder: (context, index) {
+                      return const ProductCardVertical();
+                    },
+                  ),
                 ],
               ),
             ),
