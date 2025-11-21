@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 
 import 'package:flutter/material.dart';
@@ -17,10 +18,14 @@ class ETextButtonTheme {
   );
 
   static final lightTextButtonTheme = TextButtonThemeData(
-    style: _textButtonStyle,
+    style: _textButtonStyle.merge(
+      TextButton.styleFrom(foregroundColor: EColors.black),
+    ),
   );
 
   static final darkTextButtonTheme = TextButtonThemeData(
-    style: _textButtonStyle,
+    style: _textButtonStyle.merge(
+      TextButton.styleFrom(foregroundColor: EColors.white),
+    ),
   );
 }

@@ -77,9 +77,9 @@ class HomeScreen extends StatelessWidget {
                     height: ESizes.spaceBtwSections,
                   ),
 
-                  const SectionHeading(
+                  SectionHeading(
                     title: "Products",
-                    textColor: EColors.black,
+                    onPressed: () {},
                   ),
 
                   const SizedBox(
