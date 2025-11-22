@@ -6,8 +6,8 @@ import 'package:ecommerce_app/utils/constants/enums.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class FeaturedBrandCard extends StatelessWidget {
-  const FeaturedBrandCard({
+class BrandCard extends StatelessWidget {
+  const BrandCard({
     super.key,
     required this.brandName,
     required this.subTitle,
@@ -15,6 +15,7 @@ class FeaturedBrandCard extends StatelessWidget {
     this.overlayColor,
     this.isNetworkImage = false,
     this.onTap,
+    this.showBorder = false,
   });
 
   final String brandName, brandImage;
@@ -22,6 +23,7 @@ class FeaturedBrandCard extends StatelessWidget {
   final bool isNetworkImage;
   final String subTitle;
   final VoidCallback? onTap;
+  final bool showBorder;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class FeaturedBrandCard extends StatelessWidget {
       onTap: onTap,
       child: RoundedContainer(
         padding: const EdgeInsets.all(ESizes.sm),
-        showBorder: true,
+        showBorder: showBorder,
         backgroundColor: EColors.transparent,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
