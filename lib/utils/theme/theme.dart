@@ -4,7 +4,9 @@ import 'package:ecommerce_app/utils/theme/custom/bottom_sheet_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/checkbox_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/chip_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/elevated_button_theme.dart';
+import 'package:ecommerce_app/utils/theme/custom/list_tile_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/oultlined_button_theme.dart';
+import 'package:ecommerce_app/utils/theme/custom/switch_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/text_button_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/text_field_theme.dart';
 import 'package:ecommerce_app/utils/theme/custom/text_theme.dart';
@@ -29,6 +31,8 @@ class EAppTheme {
     bottomSheetTheme: EBottomSheetTheme.lightBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.lightCheckboxTheme,
     chipTheme: EChipTheme.lightChipTheme,
+    listTileTheme: EListTileTheme.lightListTileTheme,
+    switchTheme: ESwitchTheme.lightSwitchTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -45,5 +49,7 @@ class EAppTheme {
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
     chipTheme: EChipTheme.darkChipTheme,
+    listTileTheme: EListTileTheme.darkListTileTheme,
+    switchTheme: ESwitchTheme.darkSwitchTheme,
   );
 }
