@@ -34,10 +34,7 @@ class EAppBarTheme {
     ),
   );
 
-  static final darkAppBarTheme = AppBarTheme(
-    elevation: 0,
-    centerTitle: false,
-    scrolledUnderElevation: 0,
+  static final darkAppBarTheme = _appBarTheme.copyWith(
     backgroundColor: EColors.dark,
     surfaceTintColor: EColors.dark,
     iconTheme: _iconTheme.copyWith(
