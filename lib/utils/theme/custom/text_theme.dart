@@ -75,7 +75,7 @@ class ETextTheme {
       color: EColors.textPrimary,
     ),
     titleMedium: _titleMediumStyle.copyWith(
-      color: EColors.textSecondary,
+      color: EColors.textPrimary,
     ),
     titleSmall: _titleSmallStyle.copyWith(
       color: EColors.textSecondary,

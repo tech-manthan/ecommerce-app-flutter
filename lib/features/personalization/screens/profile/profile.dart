@@ -15,12 +15,9 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         showBackArrow: true,
-        title: Padding(
-          padding: const EdgeInsets.only(top: ESizes.sm),
-          child: Text(
-            "Profile",
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
+        title: Text(
+          "Profile",
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
       body: SingleChildScrollView(
