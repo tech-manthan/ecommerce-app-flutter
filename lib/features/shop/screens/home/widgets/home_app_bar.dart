@@ -32,7 +32,6 @@ class HomeAppBar extends StatelessWidget {
       ),
       actions: [
         CartMenuIcon(
-          onPressed: () {},
           iconColor: EColors.white,
           badgeColor: EColors.black.withValues(alpha: 0.5),
           badgeTextColor: EColors.white,

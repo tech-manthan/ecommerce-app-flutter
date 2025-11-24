@@ -28,7 +28,6 @@ class StoreScreen extends StatelessWidget {
           ),
           actions: [
             CartMenuIcon(
-              onPressed: () {},
               iconColor: isDarkMode ? EColors.white : EColors.black,
               badgeColor: isDarkMode
                   ? EColors.white.withValues(alpha: 0.5)

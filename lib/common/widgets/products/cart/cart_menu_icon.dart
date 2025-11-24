@@ -1,16 +1,16 @@
+import 'package:ecommerce_app/features/shop/screens/cart/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CartMenuIcon extends StatelessWidget {
   const CartMenuIcon({
     super.key,
-    required this.onPressed,
     required this.iconColor,
     required this.badgeColor,
     required this.badgeTextColor,
   });
 
-  final VoidCallback onPressed;
   final Color iconColor;
   final Color badgeColor;
   final Color badgeTextColor;
@@ -20,7 +20,9 @@ class CartMenuIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: onPressed,
+          onPressed: () {
+            Get.to(() => const CartScreen());
+          },
           icon: Icon(
             Iconsax.shopping_bag,
             color: iconColor,
